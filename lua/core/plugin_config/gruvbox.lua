@@ -10,9 +10,14 @@ require("gruvbox").setup({
 	invert_intend_guides = false,
 	inverse = true, -- invert background for search, diffs, statuslines and errors
 	contrast = "soft", -- can be "hard", "soft" or empty string
-	palette_overrides = {},
-	overrides = {},
+	palette_overrides = {
+        bright_green = "#71aa71"
+    },
+	overrides = {
+        SignColumn = {bg = "#005555"}
+    },
 	dim_inactive = false,
 	transparent_mode = false,
 })
 vim.cmd [[ colorscheme gruvbox ]]
+
