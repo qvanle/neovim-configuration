@@ -16,8 +16,8 @@ vim.keymap.set('i', '<A-E>', '<c-o>E')
 vim.keymap.set('i', '<A-$>', '<c-o>$')
 vim.keymap.set('i', '<A-^>', '<c-o>^')
 
-vim.keymap.set('i', '<c-s>', '<c-o>:w!<CR> :echo "Saved" <CR>')
-vim.keymap.set('n', '<c-s>', ':w!<CR> :echo "Saved" <CR>')
+vim.keymap.set('i', '<c-s>', '<c-o>:wa!<CR>')
+vim.keymap.set('n', '<c-s>', ':wa!<CR>') 
 
 vim.keymap.set('n', '<leader>clf', ':noh<CR>')
 

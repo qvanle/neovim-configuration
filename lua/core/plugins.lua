@@ -12,25 +12,26 @@ end
 local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
-	use 'wbthomason/packer.nvim'
-	use 'ellisonleao/gruvbox.nvim'
-	use 'nvim-tree/nvim-tree.lua'
-	use 'nvim-tree/nvim-web-devicons'
-	use 'nvim-lualine/lualine.nvim'
-	use 'nvim-treesitter/nvim-treesitter'
-    use 'nvim-lua/plenary.nvim'
-    use 'nvim-lua/popup.nvim'
-	use{
+	use 'wbthomason/packer.nvim' -- plugins control
+	use 'ellisonleao/gruvbox.nvim' -- colorscheme
+	use 'nvim-tree/nvim-tree.lua' -- file explorer
+	use 'nvim-tree/nvim-web-devicons' --icons
+	use 'nvim-lualine/lualine.nvim' -- status line
+	use 'nvim-treesitter/nvim-treesitter' -- parser generator tool 
+    use 'nvim-lua/plenary.nvim' --external library for plugins 
+	--use 'nvim-lua/popup.nvim'
+	
+    use{ -- file finding
 		'nvim-telescope/telescope.nvim',
 		tag = '0.1.0',
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
-    use {
+    use { -- optimize the speed of finding
         'nvim-telescope/telescope-fzf-native.nvim', 
         run = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' 
     }
 
-    use 'mbbill/undotree'
+    use 'mbbill/undotree' --undo history 
 
     use {
         'VonHeikemen/lsp-zero.nvim',
@@ -55,7 +56,7 @@ return require('packer').startup(function(use)
         }
     }
 
-    use {
+    use { --terminal 
         "akinsho/toggleterm.nvim",
         tag = '*'
     }

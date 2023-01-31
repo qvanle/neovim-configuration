@@ -6,4 +6,4 @@ require("core.plugin_config.treesitter")
 require("core.plugin_config.lsp_config")
 require("core.plugin_config.undotree")
 require("core.plugin_config.toggleterm")
-
+require("core.plugin_config.grammar-guard")
