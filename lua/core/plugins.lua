@@ -12,6 +12,7 @@ end
 local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
+
 	use 'wbthomason/packer.nvim' -- plugins control
 	use 'ellisonleao/gruvbox.nvim' -- colorscheme
 	use 'nvim-tree/nvim-tree.lua' -- file explorer
@@ -19,19 +20,25 @@ return require('packer').startup(function(use)
 	use 'nvim-lualine/lualine.nvim' -- status line
 	use 'nvim-treesitter/nvim-treesitter' -- parser generator tool 
     use 'nvim-lua/plenary.nvim' --external library for plugins 
-	--use 'nvim-lua/popup.nvim'
-	
+
     use{ -- file finding
 		'nvim-telescope/telescope.nvim',
 		tag = '0.1.0',
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
     use { -- optimize the speed of finding
-        'nvim-telescope/telescope-fzf-native.nvim', 
-        run = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' 
+        'nvim-telescope/telescope-fzf-native.nvim',
+        run = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build'
     }
 
     use 'mbbill/undotree' --undo history 
+
+    use { --terminal 
+        "akinsho/toggleterm.nvim",
+        tag = '*'
+    }
+
+    use "smjonas/inc-rename.nvim"
 
     use {
         'VonHeikemen/lsp-zero.nvim',
@@ -56,10 +63,27 @@ return require('packer').startup(function(use)
         }
     }
 
-    use { --terminal 
-        "akinsho/toggleterm.nvim",
-        tag = '*'
+    use 'adelarsq/image_preview.nvim'
+
+    use 'j-morano/buffer_manager.nvim'
+
+    use 'norcalli/nvim-colorizer.lua'
+
+    use {
+        "folke/which-key.nvim",
+        config = function()
+            vim.o.timeout = true
+            vim.o.timeoutlen = 300
+        end
     }
+
+    use 'windwp/nvim-ts-autotag'
+
+    use 'numToStr/Comment.nvim'
+
+    use('jose-elias-alvarez/null-ls.nvim')
+
+    use('MunifTanjim/prettier.nvim')
 
 	if packer_bootstrap then
 		require('packer').sync()
