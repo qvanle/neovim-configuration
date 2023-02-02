@@ -1,2 +1,9 @@
 # neovim-configuration
-this is my neovim config
+
+## setup
+
+## features
+
+## plugin
+
+## shortcut
