@@ -81,9 +81,13 @@ return require('packer').startup(function(use)
 
     use 'numToStr/Comment.nvim'
 
-    use('jose-elias-alvarez/null-ls.nvim')
+    use'jose-elias-alvarez/null-ls.nvim'
 
-    use('MunifTanjim/prettier.nvim')
+    use'MunifTanjim/prettier.nvim'
+
+    use 'folke/lsp-colors.nvim'
+
+    use { 'CRAG666/code_runner.nvim', requires = 'nvim-lua/plenary.nvim' }
 
 	if packer_bootstrap then
 		require('packer').sync()

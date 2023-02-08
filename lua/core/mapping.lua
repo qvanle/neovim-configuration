@@ -66,5 +66,9 @@ vim.keymap.set("n", "<leader>ren", function()
   return ":Ren " .. vim.fn.expand("<cword>")
 end, { expr = true })
 
-
+-- buffer manager panel
 vim.keymap.set('', '<A-B>', require("buffer_manager.ui").toggle_quick_menu, {noremap = true})
+
+
+-- CMake 
+vim.keymap.set('n', '<leader>crn', ':CMakeBuild CMAKE')
