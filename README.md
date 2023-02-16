@@ -41,13 +41,17 @@
 #### ray-x/web-tools.nvim
 ## shortcut
 #### global 
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
+vim.g.mapleader = '\ '
+
+vim.g.maplocalleader = '\ '
 
 #### basic move in insert mode
 \<Alt-h>: move left in insert mode
+
 \<Alt-j>: move down in insert mode
+
 \<Alt-k>: move up in insert mode 
+
 \<Alt-l>: move right in insert mode
 
 #### save file
@@ -55,6 +59,7 @@ vim.g.maplocalleader = ' '
 
 #### undo and redo 
 \<Alt-z>: undo 
+
 \<Alt-y>: redo
 
 #### save and quit
