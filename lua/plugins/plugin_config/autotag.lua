@@ -1,2 +1,7 @@
-require('nvim-ts-autotag').setup()
+require('nvim-ts-autotag').setup{
+    autotag = {
+        enable = true,
+        filetypes = { "html" , "xml" },
+    }
+}
 
