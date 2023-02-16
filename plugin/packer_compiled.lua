@@ -74,11 +74,6 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  ["Comment.nvim"] = {
-    loaded = true,
-    path = "/home/qvanle/.local/share/nvim/site/pack/packer/start/Comment.nvim",
-    url = "https://github.com/numToStr/Comment.nvim"
-  },
   LuaSnip = {
     loaded = true,
     path = "/home/qvanle/.local/share/nvim/site/pack/packer/start/LuaSnip",
@@ -124,21 +119,6 @@ _G.packer_plugins = {
     path = "/home/qvanle/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
     url = "https://github.com/ellisonleao/gruvbox.nvim"
   },
-  ["image_preview.nvim"] = {
-    loaded = true,
-    path = "/home/qvanle/.local/share/nvim/site/pack/packer/start/image_preview.nvim",
-    url = "https://github.com/adelarsq/image_preview.nvim"
-  },
-  ["inc-rename.nvim"] = {
-    loaded = true,
-    path = "/home/qvanle/.local/share/nvim/site/pack/packer/start/inc-rename.nvim",
-    url = "https://github.com/smjonas/inc-rename.nvim"
-  },
-  ["lsp-colors.nvim"] = {
-    loaded = true,
-    path = "/home/qvanle/.local/share/nvim/site/pack/packer/start/lsp-colors.nvim",
-    url = "https://github.com/folke/lsp-colors.nvim"
-  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/home/qvanle/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
@@ -159,20 +139,10 @@ _G.packer_plugins = {
     path = "/home/qvanle/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
-  ["null-ls.nvim"] = {
-    loaded = true,
-    path = "/home/qvanle/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
-    url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
-  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/qvanle/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
-  },
-  ["nvim-colorizer.lua"] = {
-    loaded = true,
-    path = "/home/qvanle/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
-    url = "https://github.com/norcalli/nvim-colorizer.lua"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -209,11 +179,6 @@ _G.packer_plugins = {
     path = "/home/qvanle/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
-  ["prettier.nvim"] = {
-    loaded = true,
-    path = "/home/qvanle/.local/share/nvim/site/pack/packer/start/prettier.nvim",
-    url = "https://github.com/MunifTanjim/prettier.nvim"
-  },
   ["telescope-fzf-native.nvim"] = {
     loaded = true,
     path = "/home/qvanle/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
@@ -233,6 +198,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/qvanle/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
+  },
+  ["web-tools.nvim"] = {
+    loaded = true,
+    path = "/home/qvanle/.local/share/nvim/site/pack/packer/start/web-tools.nvim",
+    url = "https://github.com/ray-x/web-tools.nvim"
   },
   ["which-key.nvim"] = {
     config = { "\27LJ\2\nD\0\0\2\0\4\0\t6\0\0\0009\0\1\0+\1\2\0=\1\2\0006\0\0\0009\0\1\0)\1,\1=\1\3\0K\0\1\0\15timeoutlen\ftimeout\6o\bvim\0" },

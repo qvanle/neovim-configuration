@@ -38,8 +38,17 @@ return require('packer').startup(function(use)
         tag = '*'
     }
 
-    use "smjonas/inc-rename.nvim"
+    use 'j-morano/buffer_manager.nvim' --control buffers
 
+    use { --show shortcut
+        "folke/which-key.nvim",
+        config = function()
+            vim.o.timeout = true
+            vim.o.timeoutlen = 300
+        end
+    }
+
+    use 'windwp/nvim-ts-autotag' -- auto complete tag in HTML
     use {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v1.x',
@@ -48,7 +57,7 @@ return require('packer').startup(function(use)
             {'neovim/nvim-lspconfig'},             -- Required
             {'williamboman/mason.nvim'},           -- Optional
             {'williamboman/mason-lspconfig.nvim'}, -- Optional
-
+    
             -- Autocompletion
             {'hrsh7th/nvim-cmp'},         -- Required
             {'hrsh7th/cmp-nvim-lsp'},     -- Required
@@ -56,38 +65,14 @@ return require('packer').startup(function(use)
             {'hrsh7th/cmp-path'},         -- Optional
             {'saadparwaiz1/cmp_luasnip'}, -- Optional
             {'hrsh7th/cmp-nvim-lua'},     -- Optional
-
+    
             -- Snippets
             {'L3MON4D3/LuaSnip'},             -- Required
             {'rafamadriz/friendly-snippets'}, -- Optional
         }
     }
-
-    use 'adelarsq/image_preview.nvim'
-
-    use 'j-morano/buffer_manager.nvim'
-
-    use 'norcalli/nvim-colorizer.lua'
-
-    use {
-        "folke/which-key.nvim",
-        config = function()
-            vim.o.timeout = true
-            vim.o.timeoutlen = 300
-        end
-    }
-
-    use 'windwp/nvim-ts-autotag'
-
-    use 'numToStr/Comment.nvim'
-
-    use'jose-elias-alvarez/null-ls.nvim'
-
-    use'MunifTanjim/prettier.nvim'
-
-    use 'folke/lsp-colors.nvim'
-
-    use { 'CRAG666/code_runner.nvim', requires = 'nvim-lua/plenary.nvim' }
+   
+    use 'ray-x/web-tools.nvim'
 
 	if packer_bootstrap then
 		require('packer').sync()

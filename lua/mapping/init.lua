@@ -1,0 +1,7 @@
+require("mapping.global")
+require("mapping.telescope")
+require("mapping.nvim-tree")
+require("mapping.other")
+require("mapping.undotree")
+require("mapping.ToggleTerm")
+require("mapping.buffer-control")
