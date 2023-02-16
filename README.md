@@ -41,8 +41,8 @@
 #### ray-x/web-tools.nvim
 ## shortcut
 #### global 
-    vim.g.mapleader = ' '
-    vim.g.maplocalleader = ' '
+vim.g.mapleader = ' '
+vim.g.maplocalleader = ' '
 
 #### basic move in insert mode
 \<Alt-h>: move left in insert mode
