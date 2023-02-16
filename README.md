@@ -40,3 +40,29 @@
 #### windwp/nvim-ts-autotag 
 #### ray-x/web-tools.nvim
 ## shortcut
+#### global 
+    vim.g.mapleader = ' '
+    vim.g.maplocalleader = ' '
+
+#### basic move in insert mode
+<Alt-h>: move left in insert mode
+<Alt-j>: move down in insert mode
+<Alt-k>: move up in insert mode 
+<Alt-l>: move right in insert mode
+
+#### save file
+<Ctrl-s>: save all open buffer (only insert and normal mode)
+
+#### undo and redo 
+<Alt-z>: undo 
+<Alt-y>: redo
+
+#### save and quit
+<Alt-Z><Alt-Z>: save all open buffer and quit neovim 
+
+#### close buffer 
+<Alt-q>: close recent buffer (only insert mode and normal mode) 
+
+#### turn off highlight when searching 
+<Alt-F>: unhighlight of searching
+
