@@ -37,3 +37,12 @@ vim.keymap.set('n', '<A-q>', ':bd<CR>')
 -- turn off highlight when searching
 vim.keymap.set('n', '<A-F>', ':noh<CR>')
 vim.keymap.set('i', '<A-F>', '<c-o>:noh<CR>')
+
+-- goto config folder
+vim.keymap.set('n', '<leader>cfg', ':e ~/.config/nvim/init.lua<CR>', {silent = true})
+vim.keymap.set('n', '<leader>map', ':e ~/.config/nvim/lua/mapping/<CR>', {silent = true})
+vim.keymap.set('n', '<leader>fmt', ':e ~/.config/nvim/lua/format/<CR>', {silent = true})
+vim.keymap.set('n', '<leader>ext', ':e ~/.config/nvim/lua/plugins/<CR>', {silent = true})
+
+
+
