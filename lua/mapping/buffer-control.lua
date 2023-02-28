@@ -1,4 +1,6 @@
--- buffer manager panel
-vim.keymap.set('', '<A-B>', require("buffer_manager.ui").toggle_quick_menu, {noremap = true})
+mui = require("buffer_manager.ui")
+
+vim.keymap.set('', '<A-B>', mui.toggle_quick_menu, {noremap = true})
+
 
 
