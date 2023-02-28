@@ -1,4 +1,3 @@
-
 vim.opt.backspace = '2'
 vim.opt.showcmd = true
 vim.opt.laststatus = 2
@@ -30,5 +29,3 @@ vim.opt.signcolumn = 'yes'
 
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
-
-vim.opt.errorformat:append('%f|%l col %c|%m')
