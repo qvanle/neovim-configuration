@@ -1,5 +1,5 @@
 -- file explorer
-vim.keymap.set('n', '<A-f>', ":NvimTreeFindFileToggle<CR>")
-vim.keymap.set('i', '<A-f>', "<c-o>:NvimTreeFindFileToggle<CR>")
+vim.keymap.set('n', '<C-f>', ":NvimTreeFindFileToggle<CR>", {silent = true})
+vim.keymap.set('i', '<C-f>', "<c-o>:NvimTreeFindFileToggle<CR>", {silent = true})
 
 
