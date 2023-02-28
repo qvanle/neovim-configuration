@@ -17,6 +17,11 @@ vim.opt.softtabstop = 0
 vim.opt.expandtab = true
 vim.opt.autoindent = true
 
+
+vim.opt.nobackup = true
+vim.opt.nowritebackup = true
+vim.opt.noswapfile = true
+
 vim.opt.mouse = nil 
 
 vim.opt.termguicolors = true
