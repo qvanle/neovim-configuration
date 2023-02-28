@@ -18,9 +18,9 @@ vim.opt.expandtab = true
 vim.opt.autoindent = true
 
 
-vim.opt.nobackup = true
-vim.opt.nowritebackup = true
-vim.opt.noswapfile = true
+vim.opt.backup = false
+vim.opt.writebackup = false
+vim.opt.swapfile = false
 
 vim.opt.mouse = nil 
 
