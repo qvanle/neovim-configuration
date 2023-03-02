@@ -74,6 +74,8 @@ return require('packer').startup(function(use)
    
     use 'ray-x/web-tools.nvim'
 
+    use 'mfussenegger/nvim-dap'
+
 	if packer_bootstrap then
 		require('packer').sync()
 	end
