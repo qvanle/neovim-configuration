@@ -12,9 +12,9 @@ end
 local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
-    use 'wbthomason/packer.nvim'
+    use {'wbthomason/packer.nvim'}
 
-    use 'ayu-theme/ayu-vim'
+    use {'ayu-theme/ayu-vim'}
 
     use {
         'nvim-tree/nvim-tree.lua',
@@ -38,6 +38,8 @@ return require('packer').startup(function(use)
         -- or                            , branch = '0.1.x',
         requires = { {'nvim-lua/plenary.nvim'} }
     }
+    
+    use {'voldikss/vim-floaterm'}
 
     if packer_bootstrap then
         require('packer').sync()

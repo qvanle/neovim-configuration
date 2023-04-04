@@ -77,5 +77,18 @@ telescope.setup{
                 case_mode = "smart_case"
             },
         },
+        git_commits = {
+            prompt_prefix = "Git commits: ",
+            only_sort_text = true,
+            layout_strategy = "vertical",
+            sorting_strategy = "ascending",
+            -- Use the fzf extension
+            fzf = {
+                fuzzy = true,
+                override_generic_sorter = true,
+                override_file_sorter = true,
+                case_mode = "smart_case"
+            },
+        },
     }
 }

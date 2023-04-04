@@ -3,3 +3,6 @@ vim.api.nvim_set_keymap('n', '<leader>lg', ':Telescope live_grep<CR>', { noremap
 vim.api.nvim_set_keymap('n', '<leader>fb', ':Telescope buffers<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>gs', ':Telescope grep_string<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>fk', ':Telescope keymaps<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>gm', ':Telescope git_commits<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>cmd', ':Telescope commands<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>err', ':Telescope diagnostics<CR>', { noremap = true, silent = true })
