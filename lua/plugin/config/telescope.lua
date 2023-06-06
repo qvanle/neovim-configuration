@@ -90,5 +90,18 @@ telescope.setup{
                 case_mode = "smart_case"
             },
         },
+        keymaps = {
+            prompt_prefix = "Key binding: ";
+            only_sort_text = true, 
+            layout_strategy = "vertical",
+            sorting_strategy = "ascending",
+
+            fzf = {
+                fuzzy = true,
+                override_generic_sorter = true,
+                override_file_sorter = true,
+                case_mode = "respect_case"
+            }
+        }
     }
 }

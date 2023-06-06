@@ -6,3 +6,4 @@ vim.api.nvim_set_keymap('n', '<leader>fk', ':Telescope keymaps<CR>', { noremap =
 vim.api.nvim_set_keymap('n', '<leader>gm', ':Telescope git_commits<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>cmd', ':Telescope commands<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>err', ':Telescope diagnostics<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>hh', ':Telescope help_tags<CR>', {noremap = true, silent = true})    
