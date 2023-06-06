@@ -1,5 +1,7 @@
-require("format")
-require("mapping")
-require("plugin")
+vim.g.CONFIG_PATH = vim.fn.expand("~/.config/nvim/")
 
---require("API.LSP.lua_ls")
+file = require("src.file")
+
+file.sourceFolder("format")
+file.sourceFolder("plugin")
+file.sourceFolder("mapping")

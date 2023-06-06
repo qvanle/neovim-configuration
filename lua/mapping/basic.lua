@@ -24,3 +24,8 @@ vim.keymap.set('n', '<leader>ref', ':cd %:h<CR>', {noremap = true, silent = true
 
 vim.keymap.set('i', '<C-y>', '<C-o>dw', {noremap = true, silent = true})
 
+vim.keymap.set('i', '<C-d>', '<C-o>yy<C-o>p', {noremap = true, silent = true})
+vim.keymap.set('n', '<C-d>', 'yyp', {noremap = true, silent = true})
+
+vim.keymap.set('n', '<C-e>', ':bd!<CR>', {noremap = true, silent = true})
+

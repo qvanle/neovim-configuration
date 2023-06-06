@@ -1,2 +1,4 @@
-require("format.front")
-require("format.back")
+file = require("src.file")
+
+file.sourceFile("format/front")
+file.sourceFile("format/back")
