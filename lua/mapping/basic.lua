@@ -21,6 +21,7 @@ vim.keymap.set('n', '<leader><leader>', ':noh<CR>', {noremap = true, silent = tr
 vim.keymap.set('n', '<leader>cfg', ':cd ~/.config/nvim/lua/<CR>:e ../init.lua<CR>', {silent = true, noremap = true})
 
 vim.keymap.set('n', '<leader>ref', ':cd %:h<CR>', {noremap = true, silent = true})
+vim.keymap.set('n', '<leader>sh', ':! touch build.sh && chmod +x build.sh<CR>:e build.sh<CR>', {noremap = true, silent = true})
 
 vim.keymap.set('i', '<C-y>', '<C-o>dw', {noremap = true, silent = true})
 
