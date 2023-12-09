@@ -30,3 +30,30 @@ vim.keymap.set('n', '<C-d>', 'yyp', {noremap = true, silent = true})
 
 vim.keymap.set('n', '<C-e>', ':bd!<CR>', {noremap = true, silent = true})
 
+vim.keymap.set('n', '<A-h>', '<left>', {noremap = true, silent = true})
+vim.keymap.set('i', '<A-h>', '<left>', {noremap = true, silent = true})
+vim.keymap.set('v', '<A-h>', '<left>', {noremap = true, silent = true})
+
+vim.keymap.set('n', '<A-t>', '<down>', {noremap = true, silent = true})
+vim.keymap.set('i', '<A-t>', '<down>', {noremap = true, silent = true})
+vim.keymap.set('v', '<A-t>', '<down>', {noremap = true, silent = true})
+
+vim.keymap.set('n', '<A-n>', '<up>', {noremap = true, silent = true})
+vim.keymap.set('i', '<A-n>', '<up>', {noremap = true, silent = true})
+vim.keymap.set('v', '<A-n>', '<up>', {noremap = true, silent = true})
+
+vim.keymap.set('n', '<A-s>', '<right>', {noremap = true, silent = true})
+vim.keymap.set('i', '<A-s>', '<right>', {noremap = true, silent = true})
+vim.keymap.set('v', '<A-s>', '<right>', {noremap = true, silent = true})
+
+
+vim.keymap.set('n', '<A-p>', 'w', {noremap = true, silent = true})
+vim.keymap.set('i', '<A-p>', '<C-o>w', {noremap = true, silent = true})
+vim.keymap.set('v', '<A-p>', 'w', {noremap = true, silent = true})
+
+
+vim.keymap.set('n', '<A-y>', 'b', {noremap = true, silent = true})
+vim.keymap.set('i', '<A-y>', '<C-o>b', {noremap = true, silent = true})
+vim.keymap.set('v', '<A-y>', 'b', {noremap = true, silent = true})
+
+
