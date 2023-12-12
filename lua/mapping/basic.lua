@@ -30,21 +30,21 @@ vim.keymap.set('n', '<C-d>', 'yyp', {noremap = true, silent = true})
 
 vim.keymap.set('n', '<C-e>', ':bd!<CR>', {noremap = true, silent = true})
 
-vim.keymap.set('n', '<A-h>', '<left>', {noremap = true, silent = true})
-vim.keymap.set('i', '<A-h>', '<left>', {noremap = true, silent = true})
-vim.keymap.set('v', '<A-h>', '<left>', {noremap = true, silent = true})
+vim.keymap.set('n', '<A-h>', '<down>', {noremap = true, silent = true})
+vim.keymap.set('i', '<A-h>', '<down>', {noremap = true, silent = true})
+vim.keymap.set('v', '<A-h>', '<down>', {noremap = true, silent = true})
 
-vim.keymap.set('n', '<A-t>', '<down>', {noremap = true, silent = true})
-vim.keymap.set('i', '<A-t>', '<down>', {noremap = true, silent = true})
-vim.keymap.set('v', '<A-t>', '<down>', {noremap = true, silent = true})
+vim.keymap.set('n', '<A-t>', '<up>', {noremap = true, silent = true})
+vim.keymap.set('i', '<A-t>', '<up>', {noremap = true, silent = true})
+vim.keymap.set('v', '<A-t>', '<up>', {noremap = true, silent = true})
 
-vim.keymap.set('n', '<A-n>', '<up>', {noremap = true, silent = true})
-vim.keymap.set('i', '<A-n>', '<up>', {noremap = true, silent = true})
-vim.keymap.set('v', '<A-n>', '<up>', {noremap = true, silent = true})
+vim.keymap.set('n', '<A-n>', '<right>', {noremap = true, silent = true})
+vim.keymap.set('i', '<A-n>', '<right>', {noremap = true, silent = true})
+vim.keymap.set('v', '<A-n>', '<right>', {noremap = true, silent = true})
 
-vim.keymap.set('n', '<A-s>', '<right>', {noremap = true, silent = true})
-vim.keymap.set('i', '<A-s>', '<right>', {noremap = true, silent = true})
-vim.keymap.set('v', '<A-s>', '<right>', {noremap = true, silent = true})
+vim.keymap.set('n', '<A-d>', '<left>', {noremap = true, silent = true})
+vim.keymap.set('i', '<A-d>', '<left>', {noremap = true, silent = true})
+vim.keymap.set('v', '<A-d>', '<left>', {noremap = true, silent = true})
 
 
 vim.keymap.set('n', '<A-p>', 'w', {noremap = true, silent = true})
