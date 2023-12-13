@@ -56,4 +56,6 @@ vim.keymap.set('n', '<A-y>', 'b', {noremap = true, silent = true})
 vim.keymap.set('i', '<A-y>', '<C-o>b', {noremap = true, silent = true})
 vim.keymap.set('v', '<A-y>', 'b', {noremap = true, silent = true})
 
+vim.keymap.set('n', '<leader>hxm', ':%!xxd<CR>', {noremap = true, silent = true})
+vim.keymap.set('n', '<leader>txm', ':%!xxd -r<CR>', {noremap = true, silent = true})
 
