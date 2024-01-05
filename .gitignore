@@ -1,0 +1,15 @@
+.cache
+.cached 
+.todo
+build
+*log
+.DS_Store
+saving/
+src/dependency/raylib/raylib 
+src/dependency/yamlcpp/yamlcpp
+.vs
+.vscode
+.vscode/settings.json
+.vscode/settings.json
+countline.py
+*.log
