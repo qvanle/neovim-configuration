@@ -1,7 +1,7 @@
 .cache
 .cached 
 .todo
-build
+build/
 *log
 .DS_Store
 saving/
