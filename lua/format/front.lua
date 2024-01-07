@@ -22,3 +22,5 @@ opt.cursorcolumn = true
 opt.smartcase = true
 
 opt.incsearch = true
+
+opt.keymap = "dvorak"
