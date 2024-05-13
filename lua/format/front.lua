@@ -23,4 +23,3 @@ opt.smartcase = true
 
 opt.incsearch = true
 
-opt.keymap = "dvorak"
