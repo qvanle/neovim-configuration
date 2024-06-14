@@ -8,4 +8,5 @@ file.sourceFile("mapping/dvorak/edit")
 -- plugin
 file.sourceFile("mapping/dvorak/nvim-tree")
 file.sourceFile("mapping/dvorak/copilot")
+file.sourceFile("mapping/dvorak/floatterm")
 

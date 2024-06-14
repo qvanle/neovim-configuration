@@ -1,0 +1,6 @@
+vim.api.nvim_set_keymap('n', '<c-y>', ':FloatermToggle<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('i', '<c-y>', '<Esc>:FloatermToggle<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('t', '<c-y>', '<C-\\><C-n>:FloatermToggle<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('t', '<C-j>', '<C-\\><C-n>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<c-B>' , ':FloatermNew --autoclose=0 ./build.sh<CR>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('i', '<c-B>' , '<Esc>:FloatermNew --autoclose=0 ./build.sh<CR>', {noremap = true, silent = true})

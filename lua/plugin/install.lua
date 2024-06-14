@@ -26,7 +26,7 @@ return require('packer').startup(function(use)
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }
-    } 
+    }
 
     use {'nvim-treesitter/nvim-treesitter'}
 
@@ -78,9 +78,10 @@ return require('packer').startup(function(use)
             require('gitsigns').setup()
         end
     }
-    
+
     use 'windwp/nvim-ts-autotag'
     use 'github/copilot.vim'
+    use 'folke/neodev.nvim'
 
     if packer_bootstrap then
         require('packer').sync()

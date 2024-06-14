@@ -1,5 +1,6 @@
 file = require("src.file")
 
+file.sourceFile("plugin/config/neodev")
 file.sourceFile("plugin/config/ayu-vim")
 file.sourceFile("plugin/config/nvim-tree")
 file.sourceFile("plugin/config/lualine")
