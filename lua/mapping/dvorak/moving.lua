@@ -16,9 +16,11 @@ myfunc.move_BackEndWord = function()
 end
 myfunc.move_BeginFile = function()
     api.nvim_command('normal! gg')
+    api.nvim_command('normal! ^')
 end
 myfunc.move_EndFile = function()
     api.nvim_command('normal! G')
+    api.nvim_command('normal! ^')
 end
 myfunc.move_ForChar = function()
     api.nvim_command('normal! f')
