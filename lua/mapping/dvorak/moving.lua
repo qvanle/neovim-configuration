@@ -39,6 +39,12 @@ api.nvim_set_keymap('n', 'd', '<left>', { noremap = true, silent = true })
 api.nvim_set_keymap('n', 'n', '<right>', { noremap = true, silent = true })
 api.nvim_set_keymap('n', 'h', '<down>', { noremap = true, silent = true })
 api.nvim_set_keymap('n', 't', '<up>', { noremap = true, silent = true })
+-- alt + dnht to move in insert mode 
+api.nvim_set_keymap('i', '<M-d>', '<left>', { noremap = true, silent = true })
+api.nvim_set_keymap('i', '<M-n>', '<right>', { noremap = true, silent = true })
+api.nvim_set_keymap('i', '<M-h>', '<down>', { noremap = true, silent = true })
+api.nvim_set_keymap('i', '<M-t>', '<up>', { noremap = true, silent = true })
+
 
 api.nvim_set_keymap('n', 'b', ':lua vim.g.moving.move_ForBegWord()<CR>', { noremap = true, silent = true })
 api.nvim_set_keymap('n', 'm', ':lua vim.g.moving.move_ForEndWord()<CR>', { noremap = true, silent = true })
