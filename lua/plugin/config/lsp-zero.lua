@@ -20,7 +20,6 @@ vim.diagnostic.config({
 
 lsp.ensure_installed({
   'rust_analyzer',
-  'tsserver',
   'eslint',
 })
 
