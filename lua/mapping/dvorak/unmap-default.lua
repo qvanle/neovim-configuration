@@ -39,3 +39,4 @@ for i = 32, 126, 1 do
 
     ::endLoop1::
 end
+vim.g.mapleader = ' '
