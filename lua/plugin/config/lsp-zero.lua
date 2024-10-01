@@ -5,6 +5,19 @@ local lsp = require('lsp-zero').preset({
   suggest_lsp_servers = true,
 })
 
+vim.diagnostic.config({
+  virtual_text = true,
+  severity_sort = true,
+  float = {
+    style = 'minimal',
+    border = 'rounded',
+    source = 'always',
+    header = '',
+    prefix = '💣',
+  },
+})
+
+
 lsp.ensure_installed({
   'rust_analyzer',
   'tsserver',

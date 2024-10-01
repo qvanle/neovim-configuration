@@ -9,4 +9,5 @@ file.sourceFile("mapping/dvorak/edit")
 file.sourceFile("mapping/dvorak/nvim-tree")
 file.sourceFile("mapping/dvorak/copilot")
 file.sourceFile("mapping/dvorak/floatterm")
+file.sourceFile("mapping/dvorak/lsp")
 
