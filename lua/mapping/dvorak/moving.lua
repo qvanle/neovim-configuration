@@ -34,6 +34,21 @@ end
 myfunc.move_BackPara = function()
     api.nvim_command('normal! {')
 end
+myfunc.move_EndLine = function()
+    api.nvim_command('normal! $')
+end
+myfunc.move_BeginLine = function()
+    api.nvim_command('normal! 0')
+end
+myfunc.move_StartIndent = function()
+    api.nvim_command('normal! ^')
+end
+myfunc.findNext = function()
+    api.nvim_command('normal! n')
+end 
+myfunc.findPrev = function()
+    api.nvim_command('normal! N')
+end
 
 api.nvim_set_keymap('n', 'd', '<left>', { noremap = true, silent = true })
 api.nvim_set_keymap('n', 'n', '<right>', { noremap = true, silent = true })
@@ -53,6 +68,13 @@ api.nvim_set_keymap('n', 'M', ':lua vim.g.moving.move_BackEndWord()<CR>', { nore
 
 api.nvim_set_keymap('n', 'gg', ':lua vim.g.moving.move_BeginFile()<CR>', { noremap = true, silent = true })
 api.nvim_set_keymap('n', 'GG', ':lua vim.g.moving.move_EndFile()<CR>', { noremap = true, silent = true })
+
+api.nvim_set_keymap('n', '0', ':lua vim.g.moving.move_BeginLine()<CR>', { noremap = true, silent = true })
+api.nvim_set_keymap('n', '$', ':lua vim.g.moving.move_EndLine()<CR>', { noremap = true, silent = true })
+api.nvim_set_keymap('n', '^', ':lua vim.g.moving.move_StartIndent()<CR>', { noremap = true, silent = true })
+api.nvim_set_keymap('n', 's', '/', { noremap = true})
+api.nvim_set_keymap('n', '<C-n>', ':lua vim.g.moving.findNext()<CR>', { noremap = true})
+api.nvim_set_keymap('n', '<C-p>', ':lua vim.g.moving.findPrev()<CR>', { noremap = true})
 
 
 vim.g.moving = myfunc
