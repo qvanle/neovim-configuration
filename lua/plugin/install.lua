@@ -1,8 +1,8 @@
 local ensure_packer = function()
     local fn = vim.fn
-    local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+    local install_path = fn.stdpath('data') .. '/site/pack/packer/start/packer.nvim'
     if fn.empty(fn.glob(install_path)) > 0 then
-        fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
+        fn.system({ 'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path })
         vim.cmd [[packadd packer.nvim]]
         return true
     end
@@ -12,9 +12,9 @@ end
 local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
-    use {'wbthomason/packer.nvim'}
+    use { 'wbthomason/packer.nvim' }
 
-    use {'ayu-theme/ayu-vim'}
+    use { 'ayu-theme/ayu-vim' }
 
     use {
         'nvim-tree/nvim-tree.lua',
@@ -28,48 +28,48 @@ return require('packer').startup(function(use)
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }
     }
 
-    use {'nvim-treesitter/nvim-treesitter'}
+    use { 'nvim-treesitter/nvim-treesitter' }
 
 
-    use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make'}
+    use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.8',
         -- or                            , branch = '0.1.x',
-        requires = { {'nvim-lua/plenary.nvim'} }
+        requires = { { 'nvim-lua/plenary.nvim' } }
     }
 
-    use {'voldikss/vim-floaterm'}
+    use { 'voldikss/vim-floaterm' }
 
-    use {"folke/twilight.nvim"}
+    use { "folke/twilight.nvim" }
 
     use { 'uga-rosa/ccc.nvim', requires = { 'nvim-lua/popup.nvim', 'nvim-lua/plenary.nvim' } }
 
-    use {'neovim/nvim-lspconfig'}
+    use { 'neovim/nvim-lspconfig' }
 
     use {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v1.x',
         requires = {
             -- LSP Support
-            {'neovim/nvim-lspconfig'},
+            { 'neovim/nvim-lspconfig' },
             {
                 'williamboman/mason.nvim',
                 run = function() pcall(vim.cmd, 'MasonUpdate') end
             },
-            {'williamboman/mason-lspconfig.nvim'},
+            { 'williamboman/mason-lspconfig.nvim' },
 
             -- Autocompletion
-            {'hrsh7th/nvim-cmp'},
-            {'hrsh7th/cmp-buffer'},
-            {'hrsh7th/cmp-path'},
-            {'saadparwaiz1/cmp_luasnip'},
-            {'hrsh7th/cmp-nvim-lsp'},
-            {'hrsh7th/cmp-nvim-lua'},
+            { 'hrsh7th/nvim-cmp' },
+            { 'hrsh7th/cmp-buffer' },
+            { 'hrsh7th/cmp-path' },
+            { 'saadparwaiz1/cmp_luasnip' },
+            { 'hrsh7th/cmp-nvim-lsp' },
+            { 'hrsh7th/cmp-nvim-lua' },
 
             -- Snippets
-            {'L3MON4D3/LuaSnip'},
-            {'rafamadriz/friendly-snippets'},
+            { 'L3MON4D3/LuaSnip' },
+            { 'rafamadriz/friendly-snippets' },
         }
     }
     use {
@@ -81,6 +81,11 @@ return require('packer').startup(function(use)
 
     use 'windwp/nvim-ts-autotag'
     use 'github/copilot.vim'
+
+    use { 'akinsho/git-conflict.nvim', tag = "*", config = function()
+        require('git-conflict').setup()
+    end }
+
     use 'folke/neodev.nvim'
 
     if packer_bootstrap then

@@ -11,4 +11,4 @@ file.sourceFile("mapping/dvorak/copilot")
 file.sourceFile("mapping/dvorak/floatterm")
 file.sourceFile("mapping/dvorak/lsp")
 file.sourceFile("mapping/dvorak/telescope")
-
+file.sourceFile("mapping/dvorak/git-conflict")
